@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>exercicio 2</title>
+    </head>
+    <body>
+        <script>
+            function teste() {
+                var n1 = document.getElementById('valor1').value;
+                var n2 = document.getElementById('valor2').value;
+                var n3 = parseInt(n1) * parseInt (n1);
+                var n4 = parseInt(n2) * parseInt(n2);
+                var n5 = parseInt(n4) + parseInt(n3);
+                document.getElementById('texto').innerHTML = n5;
+            }
+        </script>
+        Escreva o valor do lado do quadrado
+        <input type="text" id="valor1">
+        <br>
+        Escreva o valor do lado de outro quadrado
+        <input type="text" id="valor2">
+        <br>
+        <button type="button" onclick="teste()">Some os dois resultados</button>
+        <p id="texto"></p>
+    </body>
+</html>

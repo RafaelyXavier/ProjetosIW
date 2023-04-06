@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>exercicio 3</title>
+    </head>
+    <body>
+        <script>
+            function teste() {
+                var n1 = document.getElementById('valor1').value;
+                var n2 = document.getElementById('valor2').value;
+                var n3 = document.getElementById('valor3').value;
+                var n4 = parseFloat(((n1 * 0.2)+(n2 * 0.3) +(n3 * 0.5))/3);
+                document.getElementById('texto').innerHTML = n4;
+            }
+        </script>
+        Nota1:
+        <input type="text" id="valor1">
+        <br>
+        Nota2:
+        <input type="text" id="valor2">
+        <br>
+        Nota3:
+        <input type="text" id="valor3">
+        <br><br>
+        <button type="button" onclick="teste()">Média</button>
+        <p id="texto"></p>
+    </body>
+</html>
